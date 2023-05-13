@@ -5,14 +5,6 @@ import random
 import datetime
 import os
 
-# Prefix is set to g! for all commands
-client = commands.Bot(command_prefix = 'g!')
-
-@client.event
-async def on_ready():
-    # Prints a message when the bot is online and functioning
-    await client.change_presence(status=discord.Status.online, activity = discord.Game(name=f'g!helpme for a list of commands! 🥳 🎉 Currently in {len(client.guilds)} servers! 🎉'))
-    print('Ready to giveaway!')
 
 
 
